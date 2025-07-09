@@ -1,0 +1,23 @@
+#personal-projects-header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#accordion-personal-projects {
+    margin-top: 20px;
+}
+
+#group-projects-header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#accordion-group-projects {
+    margin-top: 20px;
+}
+
+.accordion {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}

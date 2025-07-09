@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="header.css">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="navbar">
+      <p class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Ahmet Bilgili</span>
+      </p>
+      <ul class="nav nav-pills" id="navbar_buttons">
+        <li class="nav-item"><a href="/index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="/projects.html" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="/CV.html" class="nav-link">CV</a></li>
+        <li class="nav-item"><a href="/music.html" class="nav-link">Music</a></li>
+        <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </head>
+  <body>
+    <link rel="stylesheet" href="projects.css">
+    <h2 id="personal-projects-header">Personal Projects</h2>
+    <div class="accordion" id="accordion-personal-projects">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                IETT_API_Tools
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion_personal_projects">
+                <div class="accordion-body">
+                    <p>A project that consists of multiple <strong>Python</strong> scripts which utilizes usage of <strong>SOAP</strong> web services offered by IETT (Istanbul Electricity, Tram and Tunnel Establishments)</p>
+                    <p>Some of the scripts are: announcments.py (displays current announcments), archive.py (displays archive data), stop_info.py (stop information) and scheduled_departure_hours.py (displays
+                        scheduled departure hours)
+                    </p>
+                    <a href="https://github.com/MrAz18485/IETT_API_Tools">Project Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                trackInvent
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordion_personal_projects">
+                <div class="accordion-body">
+                    <p>trackInvent is a web application that is aimed to help its users in process of keeping track of their inventory. Comes with a functional
+                        registering and login system, supports adding/removing items and keeps track of user actions with logs.
+                    </p>
+                    <p>Mainly used <strong>Python, Flask (Web Framework), basic JS and HTML</strong></p>
+                    <a href="https://github.com/MrAz18485/trackInvent">Project Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="group-projects-header">Group Projects I worked on</h2>
+    <div class="accordion" id="accordion-group-projects">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                PCGoblin
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordion_group_projects">
+                <div class="accordion-body">
+                    <p>PCGoblin is a mobile application that aims to help users that are in process of building their PCs
+                        by offering various features such as saving builds, displaying daily deals, 
+                    </p>
+                    <p> 
+                        Worked on authentication (Register & Login) section of application which was connected to <strong>Firebase</strong>, fixed bugs.
+                    </p>
+                    <p>
+                        Mainly used <strong>Dart, Flutter</strong>
+                    </p>
+                    <a href="https://github.com/MrAz18485/PCGoblin">Project Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Hospital Management System
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordion_group_projects">
+                <div class="accordion-body">
+                    <p>Hospital Management System is a small-medium scaled <strong>MySQL</strong> Application which includes features such as
+                        inserting a patient to a room, writing prescriptions to a patient and creating appointments. 
+                    </p>
+                    <p>
+                        Worked on creating database schema, writing triggers & procedures
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
