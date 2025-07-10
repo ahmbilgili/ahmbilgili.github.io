@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -5,28 +6,38 @@
     <title>Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="header.css">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="navbar">
-      <p class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Ahmet Bilgili</span>
-      </p>
-      <ul class="nav nav-pills" id="navbar_buttons">
-        <li class="nav-item"><a href="/index.html" class="nav-link" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="/projects.html" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="/CV.html" class="nav-link">CV</a></li>
-        <li class="nav-item"><a href="/music.html" class="nav-link">Music</a></li>
-        <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
-      </ul>
-    </header>
+    <link rel="stylesheet" href="theme.css">
+    <div id="navbar">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="navbar">
+        <p class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Ahmet Bilgili</span>
+        </p>
+        <ul class="nav nav-pills" id="navbar_buttons">
+            <li class="nav-item" id="theme-item">
+                <div id="theme-switch-bundle">
+                    <div class="form-check form-switch" id="form-check-form-switch">
+                        <label class="form-check-label" for="switchCheckDefault"><span>Theme</span></label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item"><a href="/index.html" class="nav-link" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="/CV.html" class="nav-link">CV</a></li>
+            <li class="nav-item"><a href="/music.html" class="nav-link">Music</a></li>
+        </ul>
+        </header>
+    </div>
   </head>
   <body>
     <link rel="stylesheet" href="projects.css">
-    <h2 id="personal-projects-header">Personal Projects</h2>
+    <h1 id="personal-projects-header">Personal Projects</h1>
     <div class="accordion" id="accordion-personal-projects">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                IETT_API_Tools
+                <p style="margin-top: auto; margin-bottom: auto;">IETT_API_Tools</p>
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion_personal_projects">
@@ -42,7 +53,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                trackInvent
+                <p style="margin-top: auto; margin-bottom: auto;">trackInvent</p>
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordion_personal_projects">
@@ -56,13 +67,12 @@
             </div>
         </div>
     </div>
-
-    <h2 id="group-projects-header">Group Projects I worked on</h2>
+    <h1 id="group-projects-header">Group Projects I worked on</h1>
     <div class="accordion" id="accordion-group-projects">
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                PCGoblin
+                <p style="margin-top: auto; margin-bottom: auto;">PCGoblin</p>
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordion_group_projects">
@@ -83,7 +93,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Hospital Management System
+                <p style="margin-top: auto; margin-bottom: auto;">Hospital Management System</p>
                 </button>
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordion_group_projects">
@@ -99,5 +109,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </body>
+    <script src="scripts.js"></script>
+</body>
 </html>
