@@ -1,7 +1,7 @@
 var theme_switch = document.getElementById("switchCheckDefault");
 
 var background_elements = [".accordion-body", ".accordion-button", ".card-body"]
-var text_elements = ["h1", "h2", "span", "a", "p"]
+var text_elements = ["h1", "h2", "h5", "span", "p"]
 
 function change_theme()
 {

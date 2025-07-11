@@ -3,12 +3,14 @@
 }
 
 #theme-item {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-#theme-switch-bundle {
-    margin-top: 8px;
-    margin-right: 5px;
+#form-check-form-switch {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 12px;
 }
 
 #form-check-input {
