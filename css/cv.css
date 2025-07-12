@@ -1,0 +1,10 @@
+#cv-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#cv-view-download-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
