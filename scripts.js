@@ -1,7 +1,7 @@
 var theme_switch = document.getElementById("switchCheckDefault");
 
 var background_elements = [".accordion-body", ".accordion-button", ".card-body"]
-var text_elements = ["h1", "h2", "h5", "span", "p"]
+var text_elements = ["h1", "h2", "h5", "#name-span", "#navbar-small-span", "p", "hr"]
 
 function change_theme()
 {
@@ -37,6 +37,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
     change_theme()
 })
 
+document.getElementById("navbar-close-button").addEventListener("click", (button) => {
+    var small_navbar_div = document.getElementById("navbar-small");
+    if (small_navbar_div.checkVisibility() == true) {
+        document.getElementById("navbar-small").setAttribute("style", "display: none !important");
+    }
+})
+
+document.getElementById("navbar-open-button").addEventListener("click", (button) => {
+    var small_navbar_div = document.getElementById("navbar-small");
+    if (small_navbar_div.checkVisibility() == false) {
+        document.getElementById("navbar-small").setAttribute("style", "display: block !important");
+    }
+})
 
 theme_switch.addEventListener('change', function() {
     theme_switch.checked ? localStorage.setItem("themeOption", "dark") : localStorage.setItem("themeOption", "white");

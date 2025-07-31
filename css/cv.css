@@ -1,10 +1,16 @@
-#cv-header {
-    text-align: center;
-    margin-bottom: 40px;
+body {
+    width: 100%;
+    min-height: 100vh;
 }
+
 #cv-view-download-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+}
+
+object {
+    width: 80vh;
+    height: 80vh;
+    
 }
