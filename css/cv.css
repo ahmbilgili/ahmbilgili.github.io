@@ -9,8 +9,7 @@ body {
     justify-content: center;
 }
 
-object {
+canvas {
     width: 80vh;
     height: 80vh;
-    
 }
